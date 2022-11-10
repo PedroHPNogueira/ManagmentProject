@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/components/reset.css">
+    <link rel="stylesheet" href="/src/styles/components/global.css">
+    <link rel="stylesheet" href="/src/styles/components/text.css">
+    <link rel="stylesheet" href="/src/styles/components/button.css">
+    <link rel="stylesheet" href="/src/styles/components/input.css">
+    <link rel="stylesheet" href="/src/styles/components/table.css">
+    <link rel="stylesheet" href="/src/styles/components/animation.css">
+    <link rel="stylesheet" href="/src/styles/components/modal.css">
+    <link rel="stylesheet" href="/src/styles/components/header.css">
+    <link rel="stylesheet" href="/src/styles/components/modalempresa.css">
+    <link rel="stylesheet" href="/src/styles/components/modaldepartament.css">
+    <link rel="stylesheet" href="/src/styles/dashcomum.css">
+    <title>Dashboard</title>
+    <script defer type="module" src="/src/scripts/dashcomum.js"></script>
+    <script src="https://kit.fontawesome.com/dd2056a23e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="menu__default">
+        <div class="menu__btn__div"><i class="fa-solid fa-bars"></i></div>
+        <div class="menu__btn__div hidden"><i class="fa-solid fa-xmark"></i></div>
+        <div class="logo">
+            <h1 class="logo">Managment</h1>
+            <i class="fa-regular fa-registered"></i>
+        </div>
+        <div class="menu__nav">
+            <a class="button__navbar--selected" href="">Visão geral</a>
+            <p id="logout" class="button__navbar" href="">Sair</p>
+        </div>
+        <div class="dark__button">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div></div>
+        </div>
+    </header>
+    <section class="modal__menu hidden">
+        <ul>
+            <li>
+                <a class="text__1-invert" href="">Visão geral</a>
+            </li>
+            <li>
+                <p id="logout" class="text__1-invert"  href="">Sair</p>
+            </li>
+        </ul>
+    </section>
+
+    <main>
+        <section class="banner">
+            <div>
+                <h2 class="tittle__2">Bem vindo de volta a</h2>
+                <div class="logo">
+                    <h1 class="logo">Managment</h1>
+                    <i class="fa-regular fa-registered"></i>
+                </div>
+            </div>
+        </section>
+        <section class="visao__geral">
+            <h2 class="tittle__1">Visão Geral</h2>
+            <div>
+                <div class="informacao">
+                    <p class="text__1">Sua empresa</p>
+                    <span id="company" class="tittle__1"></span>
+                </div>
+                <div class="informacao">
+                    <p class="text__1">Seu departamento</p>
+                    <span id="department" class="tittle__1"></span>
+                </div>
+                <div class="informacao">
+                    <p class="text__1">Coworkers</p>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

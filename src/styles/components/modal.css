@@ -1,0 +1,386 @@
+.modal__erro {
+    position: fixed;
+    left: 5%;
+    bottom: 10px;
+    width: 90%;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: var(--red);
+    z-index: 5;
+}
+
+.erro__body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5%;
+}
+
+.erro__body h2 {
+    color: white;
+}
+
+.erro__body p {
+    margin-top: 10px;
+    color: white;
+}
+
+.modal__success {
+    position: fixed;
+    left: 5%;
+    bottom: 10px;
+    width: 90%;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: rgb(0, 186, 0);
+    z-index: 5;
+}
+
+.modal__cadastrar__empresa {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 1;
+}
+
+.modal__cadastrar__empresa > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin: 100px auto 0;
+    background-color: var(--background-primary);
+    padding: 30px 5%;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.modal__cadastrar__empresa i {
+    color: var(--text-primary);
+    font-size: 24px;
+    top: 30px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__cadastrar__empresa i:hover {
+    color: red;
+}
+
+.modal__cadastrar__departamento {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 1;
+}
+
+.modal__cadastrar__departamento > div {
+    width: 90%;
+    position: relative;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal__cadastrar__departamento p {
+    height: 40px;
+    background-color: var(--background-trhird);
+    border-radius: 8px;
+    padding: 0 2%;
+    color: var(--text-primary);
+    line-height: 40px;
+}
+
+.modal__cadastrar__departamento i {
+    color: var(--text-primary);
+    font-size: 24px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__cadastrar__departamento i:hover {
+    color: red;
+}
+
+.modal__ver__funcionario {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 3;
+}
+
+.modal__ver__funcionario > div {
+    width: 60%;
+    position: relative;
+    height: fit-content;
+    max-height: 70%;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal__ver__funcionario .edit__employee {
+    color: var(--text-primary);
+}
+
+.modal__ver__funcionario div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 20px;
+    border-bottom: 0.5px solid var(--background-invert);
+}
+
+.modal__ver__funcionario .informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.modal__ver__funcionario span {
+    background-color: var(--brand-2);
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: var(--text-invert);
+}
+
+.modal__ver__funcionario .fechar {
+    color: var(--text-primary);
+    font-size: 24px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__ver__funcionario .fechar:hover {
+    color: red;
+}
+
+.modal__contratar__funcionario {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 2;
+}
+
+.modal__contratar__funcionario > div {
+    width: 90%;
+    position: relative;
+    height: fit-content;
+    max-height: 70%;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__contratar__funcionario ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 50px 0;
+}
+
+.modal__contratar__funcionario ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 0 30px;
+    border-right: 0.5px solid var(--text-primary);
+}
+
+.modal__contratar__funcionario i {
+    color: var(--text-primary);
+    font-size: 24px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__contratar__funcionario i:hover {
+    color: red;
+}
+
+.modal__edit__funcionario{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 4;
+}
+
+.modal__edit__funcionario> div {
+    width: 70%;
+    position: relative;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal__edit__funcionario i {
+    color: var(--text-primary);
+    font-size: 20px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__edit__funcionario i:hover {
+    color: red;
+}
+
+.modal__editar__departamento {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 2;
+}
+
+.modal__editar__departamento > div {
+    width: 90%;
+    position: relative;
+    height: fit-content;
+    max-height: 70%;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal__editar__departamento i {
+    color: var(--text-primary);
+    font-size: 20px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__editar__departamento i:hover {
+    color: red;
+}
+
+@media (min-width: 762px) {
+
+    .modal__erro {
+        left: calc(95vw - 300px);
+        bottom: 20px;
+        width: 300px;
+    }
+
+    .modal__success {
+        left: calc(95vw - 300px);
+        bottom: 20px;
+        width: 300px;
+    }
+
+    .modal__cadastrar__empresa > div {
+        width: 40%;
+        padding: 30px 2%;
+        gap: 40px;
+    }
+
+    .modal__cadastrar__departamento > div {
+        width: 400px;
+        padding: 15px 2%;
+        gap: 30px;
+    }
+
+    .modal__ver__funcionario > div {
+        width: 250px;
+        position: relative;
+        height: fit-content;
+        max-height: 70%;
+        border-radius: 8px;
+        background-color: var(--background-primary);
+        margin: auto;
+        top: 100px;
+        padding: 20px 2%;
+    }
+
+    .modal__contratar__funcionario > div {
+        width: 600px;
+        top: 100px;
+        padding: 15px 3%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .modal__contratar__funcionario ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        padding: 50px 0;
+    }
+
+    .modal__contratar__funcionario  ul::-webkit-scrollbar{
+        width: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .modal__contratar__funcionario  ul::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+
+    .modal__edit__funcionario> div {
+        width: 300px;
+        padding: 25px 2%;
+        gap: 40px;
+    }
+
+    .modal__editar__departamento > div {
+        width: 400px;
+        padding: 15px 2%;
+    }
+}

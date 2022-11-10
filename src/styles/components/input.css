@@ -1,0 +1,23 @@
+.input__filtro {
+    height: 40px;
+    background-color: var(--background-trhird);
+    border-radius: 8px;
+    padding: 0 2%;
+    color: var(--text-primary);
+}
+
+.select__default {
+    height: 40px;
+    background-color: var(--background-trhird);
+    border-radius: 8px;
+    padding: 0 2%;
+    color: var(--text-primary);
+}
+
+.select__default--invert {
+    height: 40px;
+    background-color: var(--background-invert);
+    border-radius: 8px;
+    padding: 0 2%;
+    color: var(--text-invert);
+}

@@ -1,0 +1,189 @@
+.modal__ver__empresa {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 1;
+}
+
+.modal__ver__empresa > div {
+    width: 90%;
+    position: relative;
+    height: 70%;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.modal__ver__empresa .nome__empresa {
+    text-align: center;
+    border-bottom:.5px solid var(--text-secondary);
+}
+
+.modal__ver__empresa .nome__empresa p {
+    margin: 10px 0;
+}
+
+.modal__ver__empresa .informacao__basica {
+    display: flex;
+    flex-direction: row;
+    margin:  0;
+    justify-content: space-between;
+    padding: 20px 10%;
+    border-bottom:.5px solid var(--text-secondary);
+}
+
+.modal__ver__empresa .informacao__basica div {
+    text-align: center;
+}
+
+.modal__ver__empresa .informacao__basica .linha {
+    width: 1px;
+    background-color: var(--text-secondary);
+}
+
+.modal__ver__empresa .informacao__basica div p {
+    background-color: var(--brand-2);
+    color: var(--text-invert);
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.modal__ver__empresa .departamentos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom:.5px solid var(--text-secondary);
+}
+
+.modal__ver__empresa .departamentos > div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 10px;
+}
+
+.modal__ver__empresa .departamentos > div i {
+    color: var(--text-invert);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal__ver__empresa .departamentos ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    overflow-x: scroll;
+    padding: 0 0 20px 0;
+}
+
+.modal__ver__empresa .departamentos ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    border-right: .5px solid var(--text-secondary);
+}
+
+.modal__ver__empresa .departamentos ul li button {
+    height: 28px;
+}
+
+.modal__ver__empresa .funcionarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.modal__ver__empresa .funcionarios ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    overflow-x: scroll;
+    padding: 0 0 20px 0;
+}
+
+.modal__ver__empresa .funcionarios ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    border-right: .5px solid var(--text-secondary);
+}
+
+.modal__ver__empresa .funcionarios ul li button {
+    height: 28px;
+}
+
+.modal__ver__empresa i {
+    color: var(--text-primary);
+    font-size: 24px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__ver__empresa i:hover {
+    color: red;
+}
+
+.modal__ver__empresa .add__department {
+    position: static;
+    background-color: var(--brand-2);
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+@media (min-width: 762px){
+
+    .modal__ver__empresa > div {
+        width: 400px;
+        padding: 15px 2%;
+    }
+
+    .modal__ver__empresa > div::-webkit-scrollbar{
+        width: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .modal__ver__empresa > div::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+
+    .modal__ver__empresa > div .departamentos ul::-webkit-scrollbar{
+        height: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .modal__ver__empresa > div .departamentos ul::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+
+    .modal__ver__empresa > div .funcionarios ul::-webkit-scrollbar{
+        height: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .modal__ver__empresa > div .funcionarios ul::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+}

@@ -1,0 +1,102 @@
+.menu__default {
+    position: sticky;
+    z-index: 1;
+    top: -1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 5%;
+    background-color: var(--background-primary);
+    box-shadow: 0 1px var(--text-secondary);
+    transition: .25s;
+}
+
+.menu__btn__div > i {
+    color: var(--brand-1);
+    font-size: 28px;
+    width: 50px;
+}
+
+.menu__nav {
+    display: none;
+}
+
+.dark__button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 25px;
+    box-shadow: inset 100px 0 var(--background-secondary);
+    border-radius: 30px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.dark__button i {
+    color: var(--text-primary);
+    transition: .25s;
+}
+
+.dark__button div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--text-primary);
+    transition: .25s;
+}
+
+.modal__menu {
+    position: fixed;
+    z-index: 0;
+    top: 50px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--grey-opacity-1);
+    transition: .25s;
+}
+
+.modal__menu {
+    width: 100%;
+    background-color: var(--background-invert);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 10px 5%;
+}
+
+.modal__menu > ul > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px var(--background-secondary);
+}
+
+@media ( min-width: 762px){
+
+    .menu__btn__div {
+        display: none;
+    }
+
+    .menu__default{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu__nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-right: 100px;
+    }
+
+    .menu__nav p {
+        cursor: pointer;
+    }
+}

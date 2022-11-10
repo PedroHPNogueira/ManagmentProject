@@ -1,0 +1,131 @@
+main {
+    height: 100%;
+    background-color: var(--background-secondary);
+}
+
+.logo__section {
+    height: 30%;
+    background-image: var(--linear-gradient);
+    padding: 30px 5%;
+}
+
+.logo__section .logo {
+    color: var(--text-invert);
+}
+
+.logo__section p {
+    margin-top: 30px;
+    color: var(--text-invert);
+    font-size: 24px;
+}
+
+.section__login {
+    background-color: var(--grey-6);
+    padding: 40px 5%;
+}
+
+.section__login div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section__login input {
+    height: 50px;
+}
+
+.section__login input {
+    margin-top: 20px;
+}
+
+.section__login a {
+    margin-top: 20px;
+    font-size: .7rem;
+    color: var(--text-link);
+    text-align: center;
+}
+
+.section__login button {
+    margin-top: 20px;
+    height: 50px;
+}
+
+select {
+    margin-top: 20px;
+    height: 50px;
+    background-color: var(--background-trhird);
+    border-radius: 8px;
+    padding: 0 2%;
+    color: var(--text-primary);
+}
+
+@media (min-width: 762px){
+
+    body{
+        height: calc(100vh - 50px);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo__section {
+        height: 100%;
+        width: 45%;
+        background-image: var(--linear-gradient);
+        padding: 30px 5%;
+    }
+    
+    .logo__section .logo {
+        margin-top: 50px;
+        font-size: 4rem;
+    }
+
+    .logo__section .logo i {
+        margin-top: 50px;
+    }
+    
+    .logo__section p {
+        margin-top: 50px;
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    
+    .section__login {
+        height: 100%;
+        width: 55%;
+        padding: 50px 10%;
+    }
+    
+    .section__login div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section__login input {
+        height: 60px;
+    }
+    
+    .section__login input {
+        margin-top: 35px;
+    }
+    
+    .section__login a {
+        margin-top: 35px;
+        font-size: .7rem;
+        color: var(--text-link);
+        text-align: center;
+    }
+    
+    .section__login button {
+        margin-top: 35px;
+        height: 60px;
+    }
+
+    select {
+        margin-top: 35px;
+        height: 60px;
+    }
+    
+}

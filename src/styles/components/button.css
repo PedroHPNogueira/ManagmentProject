@@ -1,0 +1,100 @@
+.button__navbar {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text-secondary);
+    padding: 0 10px;
+    border-radius: 4px;
+    box-shadow: inset 1px 0px var(--brand-1);
+    transition: .5s;
+}
+
+.button__navbar:hover{
+    box-shadow: inset 200px 0px var(--brand-1);
+    color: var(--text-primary);
+}
+
+.button__navbar--selected {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text-primary);
+    padding: 0 10px;
+    border-radius: 4px;
+    box-shadow: inset 1px 0 var(--brand-1);
+    transition: .5s;
+}
+
+.button__navbar--selected:hover{
+    box-shadow: inset 200px 0px var(--brand-1);
+}
+
+.button__default {
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    border: 2px solid var(--background-invert);
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button__default:hover {
+    background-color: var(--background-secondary);
+}
+
+.button__search {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    background-color: var(--brand-2);
+    color: var(--text-invert);
+    font-size: 20px;
+}
+
+.button__primary {
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-image: var(--linear-gradient);
+    color: var(--text-invert);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button__default--invert {
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: var(--background-invert);
+    color: var(--text-invert);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button__red {
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: var(--red);
+    color: var(--text-invert);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button__green {
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: green;
+    color: var(--text-invert);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}

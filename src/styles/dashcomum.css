@@ -1,0 +1,95 @@
+main {
+    background-color: var(--background-secondary);
+    min-height: calc(100vh - 50px);
+}
+
+.banner {
+    background-image: var(--linear-gradient);
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner > div > div {
+    margin: 15px 0 ;
+}
+
+.visao__geral {
+    text-align: center;
+    padding: 50px 15%;
+}
+
+.visao__geral h2 {
+    margin-bottom: 20px;
+}
+
+.visao__geral > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.visao__geral .informacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0 50px;
+    gap: 30px;
+    border-bottom: 1px solid var(--background-invert);
+}
+
+.visao__geral .informacao > p {
+    background-color: var(--brand-2);
+    width: fit-content;
+    line-height: 24px;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: var(--text-invert);
+}
+
+.visao__geral .informacao > span {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.visao__geral ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.visao__geral ul::-webkit-scrollbar{
+    height: 10px;
+    background-color: var(--background-invert);
+}
+
+.visao__geral ul::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--background-trhird);
+}
+
+.visao__geral ul li {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-right: 1px solid var(--background-invert);
+    gap: 10px;
+}
+
+@media (min-width: 762px) {
+
+    .banner {
+        flex-direction: row;
+        padding: 40px 10%;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+}

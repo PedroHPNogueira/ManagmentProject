@@ -1,0 +1,97 @@
+main {
+    background-color: var(--background-secondary);
+    min-height: calc(100vh - 50px);
+}
+
+.cadastrar__departamento {
+    background-image: var(--linear-gradient);
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cadastrar__departamento > div > div {
+    margin: 15px 0 ;
+}
+
+.cadastrar__departamento .select {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.cadastrar__departamento button {
+    width: 250px;
+}
+
+.cadastrar__departamento select {
+    width: 250px;
+}
+
+.lista__departamentos {
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista__filtros {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista__filtros > select {
+    width: 235px;
+}
+
+.table__default table th {
+    padding: 15px 35px 0;
+    width: calc(100%/3);
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 762px) {
+
+    .cadastrar__departamento {
+        padding: 40px 10%;
+        flex-direction: row;
+    }
+
+    .cadastrar__departamento h2 {
+        font-size: 2rem;
+    }
+
+    .cadastrar__departamento .logo {
+        font-size: 3rem;
+        margin-top: 7px;
+    }
+
+    .cadastrar__departamento i {
+        margin-top: 10px;
+    }
+
+    .lista__departamentos {
+        padding: 50px 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lista__departamentos table {
+        width: 100%;
+    }
+    
+    .table__default table th {
+        padding: 15px 35px 0;
+        width: calc(100%/5);
+    }
+
+    .desktop {
+        visibility: hidden;
+    }
+}

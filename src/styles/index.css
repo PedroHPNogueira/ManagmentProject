@@ -1,0 +1,56 @@
+body {
+    background-color: var(--background-secondary);
+    transition: .25s;
+}
+
+.wellcome__section {
+    height: 220px;
+    padding: 20px 5%;
+    background-image: var(--linear-gradient);
+}
+
+.wellcome__section .logo {
+    color: var(--text-invert);
+    font-size: 2.5rem;
+    transition: .25s;
+}
+
+.wellcome__section p {
+    color: var(--text-invert);
+    margin: 20px 0 0;
+    transition: .25s;
+}
+
+.companies__list {
+    padding: 50px 5%;
+}
+
+input {
+    margin-right: 10px;
+}
+
+.input__div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 762px){
+
+    .wellcome__section {
+        padding: 40px 5% 0;
+        gap: 30px;
+    }
+
+    .companies__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table__default table th {
+        width: calc(100%/4);
+    }
+}
+

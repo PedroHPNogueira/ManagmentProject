@@ -1,0 +1,86 @@
+main {
+    background-color: var(--background-secondary);
+    min-height: calc(100vh - 50px);
+}
+
+.cadastrar__empresa {
+    background-image: var(--linear-gradient);
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cadastrar__empresa > div > div {
+    margin: 15px 0 ;
+}
+
+.cadastrar__empresa button {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.lista__empresas {
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista__filtros {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista__filtros > select {
+    width: 235px;
+}
+
+.table__default table th {
+    padding: 15px 35px 0;
+    width: calc(100%/3);
+}
+
+.desktop {
+    display: none;
+}
+@media (min-width: 762px) {
+
+    .cadastrar__empresa {
+        flex-direction: row;
+        padding: 40px 10%;
+    }
+
+    .cadastrar__empresa h2 {
+        font-size: 2rem;
+    }
+
+    .cadastrar__empresa h1 {
+        font-size: 3rem;
+    }
+
+    .cadastrar__empresa button {
+        height: 50px;
+        margin: auto;
+    }
+
+    .lista__empresas {
+        padding: 50px 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lista__empresas table {
+        width: 100%;
+    }
+    
+    .table__default table th {
+        padding: 15px 35px 0;
+        width: calc(100%/6);
+    }
+
+    .desktop {
+        visibility: hidden;
+    }   
+}

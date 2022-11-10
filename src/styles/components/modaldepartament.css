@@ -1,0 +1,130 @@
+.modal__ver__departamento {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+    z-index: 2;
+}
+
+.modal__ver__departamento > div {
+    width: 90%;
+    position: relative;
+    height: fit-content;
+    max-height: 70%;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    margin: auto;
+    top: 100px;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.modal__ver__departamento .nome__departamento {
+    align-items: center;
+    text-align: center;
+    border-bottom:.5px solid var(--text-secondary);
+}
+
+.modal__ver__departamento .nome__departamento > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.modal__ver__departamento .nome__departamento > div i {
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.modal__ver__departamento .nome__departamento p {
+    margin: 10px 0;
+}
+
+.modal__ver__departamento .funcionarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom:.5px solid var(--text-secondary);
+}
+
+.modal__ver__departamento .funcionarios ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    overflow-x: scroll;
+    padding: 0 0 20px 0;
+}
+
+.modal__ver__departamento .funcionarios ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    border-right: .5px solid var(--text-secondary);
+}
+
+.modal__ver__departamento .funcionarios ul li div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.modal__ver__departamento .funcionarios ul li button {
+    height: 28px;
+}
+
+.modal__ver__departamento > div > button {
+    margin-top: 20px;
+}
+
+.modal__ver__departamento .fechar {
+    color: var(--text-primary);
+    font-size: 24px;
+    top: 15px;
+    right: 6%;
+    position: absolute;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal__ver__departamento .fechar:hover {
+    color: red;
+}
+
+@media (min-width: 762px) {
+
+    .modal__ver__departamento > div {
+        width: 400px;
+        padding: 15px 2%;
+    }
+
+    .modal__ver__departamento > div::-webkit-scrollbar{
+        width: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .modal__ver__departamento > div::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+
+    .modal__ver__departamento > div .funcionarios ul::-webkit-scrollbar{
+        height: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .modal__ver__departamento > div .funcionarios ul::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+}

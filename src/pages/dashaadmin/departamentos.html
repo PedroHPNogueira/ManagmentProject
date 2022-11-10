@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/components/reset.css">
+    <link rel="stylesheet" href="/src/styles/components/global.css">
+    <link rel="stylesheet" href="/src/styles/components/text.css">
+    <link rel="stylesheet" href="/src/styles/components/button.css">
+    <link rel="stylesheet" href="/src/styles/components/input.css">
+    <link rel="stylesheet" href="/src/styles/components/table.css">
+    <link rel="stylesheet" href="/src/styles/components/animation.css">
+    <link rel="stylesheet" href="/src/styles/components/modal.css">
+    <link rel="stylesheet" href="/src/styles/components/header.css">
+    <link rel="stylesheet" href="/src/styles/components/modalempresa.css">
+    <link rel="stylesheet" href="/src/styles/components/modaldepartament.css">
+    <link rel="stylesheet" href="/src/styles/dashadmin/departamentos.css">
+    <title>Dashboard</title>
+    <script defer type="module" src="/src/scripts/dashadmin/departamento.js"></script>
+    <script src="https://kit.fontawesome.com/dd2056a23e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="menu__default">
+        <div class="menu__btn__div"><i class="fa-solid fa-bars"></i></div>
+        <div class="menu__btn__div hidden"><i class="fa-solid fa-xmark"></i></div>
+        <div class="logo">
+            <h1 class="logo">Managment</h1>
+            <i class="fa-regular fa-registered"></i>
+        </div>
+        <div class="menu__nav">
+            <a class="button__navbar" href="/src/pages/dashaadmin/visaogeral.html">Visão geral</a>
+            <a class="button__navbar" href="/src/pages/dashaadmin/empresas.html">Empresas</a>
+            <a class="button__navbar--selected" href="">Departamentos</a>
+            <p id="logout" class="button__navbar" href="">Sair</p>
+        </div>
+        <div class="dark__button">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div></div>
+        </div>
+    </header>
+    <section class="modal__menu hidden">
+        <ul>
+            <li>
+                <a class="text__1-invert" href="/src/pages/dashaadmin/visaogeral.html">Visão geral</a>
+            </li>
+            <li>
+                <a class="text__1-invert" href="/src/pages/dashaadmin/empresas.html">Empresas</a>
+            </li>
+            <li>
+                <a class="text__1-invert"  href="">Departamentos</a>
+            </li>
+            <li>
+                <p id="logout" class="text__1-invert"  href="">Sair</p>
+            </li>
+        </ul>
+    </section>
+
+    <main>
+        <section class="cadastrar__departamento">
+            <div>
+                <h2 class="tittle__2">Crie departamentos com a </h2>
+                <div class="logo">
+                    <h1 class="logo">Managment</h1>
+                    <i class="fa-regular fa-registered"></i>
+                </div>
+            </div>
+            <div class="select">
+                <select class="select__default--invert" name="" id="companys">
+                    <option value="">-Selecionar empresa-</option>
+                </select>
+                <button class="button__default--invert cadastrar">Cadastrar departamento</button>
+            </div>
+        </section>
+
+        <section class="lista__departamentos">
+            <h2 class="tittle__1">Seus departamentos</h2>
+            <div class="lista__filtros">
+                <select class="select__default filtro__empresa" id="companys">
+                    <option value="">-Selecionar empresa-</option>
+                </select>
+                <div>
+                    <input id="name__filtro" class="input__filtro" type="text" placeholder="Pesquisar por nome">
+                    <button class="button__search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="table__default">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th class="desktop">Descrição</th>
+                        <th>Empresa</th>
+                        <th class="desktop">Funcionários</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

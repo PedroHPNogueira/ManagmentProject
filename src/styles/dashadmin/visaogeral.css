@@ -1,0 +1,128 @@
+main {
+    background-color: var(--background-secondary);
+    min-height: calc(100vh - 50px);
+}
+
+.banner {
+    background-image: var(--linear-gradient);
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner > div > div {
+    margin: 15px 0 ;
+}
+
+.visao__geral {
+    text-align: center;
+    padding: 50px 15%;
+}
+
+.visao__geral h2 {
+    margin-bottom: 20px;
+}
+
+.visao__geral > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.visao__geral .informacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0 50px;
+    gap: 30px;
+    border-bottom: 1px solid var(--background-invert);
+}
+
+.visao__geral .informacao p {
+    background-color: var(--brand-2);
+    width: fit-content;
+    line-height: 24px;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: var(--text-invert);
+}
+
+.visao__geral .informacao span {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.setores {
+    text-align: center;
+    padding: 10%;
+}
+
+.setores ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 50px 5% 20px;
+}
+
+.setores ul li {
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    background-color: var(--brand-2);
+    border-radius: 6px;
+    color: var(--text-invert);
+    margin-right: 30px;
+}
+
+@media (min-width: 762px) {
+
+    .banner {
+        flex-direction: row;
+        padding: 40px 10%;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .visao__geral {
+        text-align: center;
+        padding: 50px 20%;
+    }
+
+    .visao__geral h2 {
+        font-size: 3rem;
+    }
+
+    .visao__geral > div {
+        padding: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--background-invert);
+    }
+
+    .visao__geral .informacao {
+        padding: 50px 0 50px;
+        gap: 60px;
+        border-bottom: none
+    }
+    
+    .visao__geral .informacao span {
+        font-size: 10rem;
+        font-weight: 300;
+    }
+
+    .setores ul::-webkit-scrollbar{
+        height: 10px;
+        background-color: var(--background-primary);
+    }
+    
+    .setores ul::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: var(--background-trhird);
+    }
+}

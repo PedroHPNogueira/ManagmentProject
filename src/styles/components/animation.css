@@ -1,0 +1,132 @@
+.dark__active {
+    transform: translateX(21px);
+    animation: changeToDark .3s;
+}
+
+@keyframes changeToDark {
+    0% {transform: translateX(0px);}
+    100% { transform: translateX(21px);}
+}
+
+.light__active {
+    animation: changeToLight .3s;
+}
+
+@keyframes changeToLight {
+    0% {transform: translateX(21px);}
+    100% { transform: translateX(0px);}
+}
+
+.menu__button__out {
+    animation: menuBtnOut .2s;
+}
+
+@keyframes menuBtnOut {
+    0% { 
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.menu__button__in {
+    animation: menuBtnIn .2s;
+}
+
+@keyframes menuBtnIn {
+    0% { 
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu__modal__in {
+    animation: menuModalIn .5s;
+}
+
+@keyframes menuModalIn {
+    0% { transform: translateY(-100%);}
+
+    50% { transform: translateY(5%);}
+
+    100% { transform: translateY(0);}
+}
+
+.menu__modal__out {
+    animation: menuModalOut .2s;
+}
+
+@keyframes menuModalOut {
+    0% { transform: translateY(0);}
+
+    100% { transform: translateY(-100%);}
+}
+
+.modal__information__appear {
+    animation: modalInfoAppear .4s;
+}
+
+@keyframes modalInfoAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(130%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal__information__disappear {
+    animation: modalInfoDisappear .4s;
+}
+
+@keyframes modalInfoDisappear {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(130%);
+    }
+}
+
+.modal__genericAppear {
+    animation: modalGenericAppear .4s;
+}
+
+@keyframes modalGenericAppear {
+    0% { 
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal__genericDisappear {
+    animation: modalGenericDisappear .4s;
+}
+
+@keyframes modalGenericDisappear{
+    0% { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+}
